@@ -5,27 +5,26 @@ body {
   font-family: 'Open Sans', Helvetica, 'Roboto';
   margin: 0;
 }
-
-section, header {
+header {
   display: flex;
   justify-content: space-between;
+
+}
+.nav {
+  width: 60%;
 }
 .navig {
   list-style: none;
   font-weight: 600;
-  width: 55%;
   margin: 5px 0 0 63px;
-background-color: red;
   padding-left: 10px;
   border-left: 5px solid #313133;
 }
-
 .title {
-    display: flex;
-    flex-direction: column;
-  background-color: red;
-}
+  width: 40%;
+  text-align: right;
 
+}
 li a {
   color: #313133;
   text-decoration: none;
@@ -35,17 +34,17 @@ li:hover a {
   color: white;
   padding: 3px;
 }
-
 .portfolio {
   transform: rotate(-90deg);
+  transform-origin: 0 0;
+  position: absolute;
   font-size: 105pt;
-background-color: red;
-position: relative;
-width: 45%;
-
+  top: 85%;
+  left: 35px;
+  width: 45%;
 }
 .photo {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
 }
 .after_photo {
@@ -53,18 +52,29 @@ width: 45%;
 }
 .before_mockups {
   display: flex;
-
+  justify-content: space-between;
+}
+.p_left {
+  position: relative;
+  width: 10%
+}
+.p_right {
+  width: 90%;
+  text-align: right;
 }
 .danilkovich {
-  font-size: 45pt;
+    font-size: 45pt;
   font-weight: 500;
-}
-.graph {
-  font-size:18pt;
-  font-weight: 300;
-  text-align: right;
+
 
 }
+.graph {
+  top: 95%;
+  font-size:18pt;
+  font-weight: 300;
+
+
+  }
 .left_part {
   display: flex;
   flex-wrap: wrap;
