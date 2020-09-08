@@ -65,16 +65,19 @@ li:hover a {
 .danilkovich {
     font-size: 45pt;
   font-weight: 500;
-
-
 }
 .graph {
   top: 95%;
   font-size:18pt;
   font-weight: 300;
-
-
   }
+.left_part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 78px;
+  
+}
 .left_part {
   display: flex;
   flex-wrap: wrap;
