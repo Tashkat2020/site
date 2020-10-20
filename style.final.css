@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
 body {
   background-image: url(img/kapli.png), url(img/line.png);
+  background-repeat: no-repeat;
   color: #313133;
+  height: auto;
+  width: auto;
   font-family: 'Open Sans', Helvetica, 'Roboto';
   margin: 0;
 }
+
+
 header {
   display: flex;
   justify-content: space-between;
-
+  margin: 0;
+  padding: 0;
 }
 .nav {
   width: 60%;
@@ -23,7 +29,8 @@ header {
 .title {
   width: 40%;
   text-align: right;
-
+  margin-bottom: 20px;
+  padding-right: 60px;
 }
 li a {
   color: #313133;
@@ -40,7 +47,7 @@ li:hover a {
   position: absolute;
   font-size: 105pt;
   top: 85%;
-  left: 35px;
+  left: 30px;
   width: 45%;
 }
 .photo {
@@ -63,27 +70,25 @@ li:hover a {
   text-align: right;
 }
 .danilkovich {
-    font-size: 45pt;
+  font-size: 45pt;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 .graph {
   top: 95%;
   font-size:18pt;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
   }
 .left_part {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 78px;
-  
-}
-.left_part {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-left: 78px;
-  padding-top: -15px;
+  top: 50px;
+
 }
 .style_figury {
   width: 225px;
@@ -131,11 +136,9 @@ li:hover a {
   justify-content: space-between;
 }
 .line_gor_leftside {
-  display: flex;
-  flex-wrap: wrap;
   width: 450px;
   border-top: 5px solid #313133;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .textleft_aboutme {
   font-size: 35pt;
@@ -169,17 +172,15 @@ li:hover a {
   left: 1800px;
 }
 .line_gor_rigtside {
-  display: flex;
-  flex-wrap: wrap;
   width: 820px;
   border-top: 5px solid #313133;
   margin-top: 60px;
-  margin-left: 697px;
+  float: right;
 }
 .block_ph_plakat {
-  margin-top: 160px;
+  margin-top: 65px;
   width: 620px;
-  height: 456px;
+  height: 456px65
 }
 .textright {
   width: 600px;
@@ -187,17 +188,23 @@ li:hover a {
 .right_part {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-left: 80px;
-  padding-top: -15px;
-  padding-right: 60px;
+}
+.progect {
+  padding-left: 152px;
+}
+.textright_plakat {
+  width: 650px;
+  position: absolute;
+  margin-left: 775px;
+  margin-top: 130px;
 }
 .textleft_aidentica {
   width: 650px;
 }
 .block_ph_aidentica {
   margin-right: 60px;
-  margin-top: 35px;
+  margin-top: 30px;
   width: 600px;
   height: 441px;
 }
@@ -205,9 +212,11 @@ li:hover a {
   width: 600px;
   font-size: 16pt;
   font-weight: 500;
+  margin-top: 50px;
+  margin-left: 155px;
 }
 .block_ph_upac {
-  margin-top: 20px;
+  margin-top: 75px;
   width: 620px;
   height: 456px;
 }
@@ -227,10 +236,14 @@ li:hover a {
   flex-wrap: wrap;
   width: 200px;
   justify-content: space-around;
-  margin-left: 270px;
-  margin-top: 168px;
+  margin-top: 120px;
 }
-.sety {
+.kontacts {
+  width: 650px;
+  margin-left: 860px;
+  top: 20px;
+}
+  .sety {
   height: 42px;
   width: 42px;
 }
@@ -241,7 +254,7 @@ li:hover a {
   font-weight: 300;
   background: #313133;
   margin-top: 10px;
-  margin-left: 780px;
+  margin-left: 860px;
   border:none;
   outline: none;
 }
@@ -261,44 +274,27 @@ button a {
   -webkit-transform: translateY(-30px);
   transform: translateY(-30px);
 }
-@media (max-width: 768px) {
-  .graph {
-    text-align: left;
-  }
-  .title {
-    margin: -55px 0 0 60px;
-  }
-  .photo {
-    max-width: 300%;
-    margin-right: -600px;
-    margin-top: 20px;
-  }
-  .portfolio {
-    display: none;
-  }
-.container_mystyle {
-  max-width: 60%;
-}
-.container_about {
-  max-width: 70%;
-}
+@media (max-width: 768px){
 
-.text_16pt_aboutme {
-  max-width: 90%;
+  .before_mockups{
+    display: block;
+    max-width: 100%;}
+  .textright_upac{
+  position: relative;
+  align: left;
+  margin-left: 0;
 }
-.scils {
-  max-width: 140px;
+  .textright_plakat{
+  position: relative;
+  align: left;
+margin-left: 0;}
+.container_about{
+  margin-left: 0;
+  width: 65%;
+  align: center;
 }
-.container_allscils {
-  max-width: 1200px;
+.container_mystyle{
+  margin-left: 0;
+  width: 45%;
 }
-.line_gor_leftside {
-  display: none;
-}
-.line_gor_rigtside {
-  display: none;
-}
-
-@media (max-width: 320px) {
-
 }
